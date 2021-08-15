@@ -13,7 +13,7 @@
 
         $(this).on('mouseover', function(e){
             
-            var html = '<div data-parent="sit-id-seq-21" id="env-preview-div" class="env-preview-block env-theme-envato  env-preview-shadow" style=""><img class="env-preview-image" src="https://www.divdojo.com/wp-content/uploads/2019/10/3357768-590x300.jpg" alt="Pawsitive - Photography WordPress Theme" width="500px" height="auto" style="display:none;"><div class="env-preview-preloader"></div><h3>Pawsitive - Photography WordPress Theme</h3><div class="style-envato-info"><span class="style-envato-author">by admin</span><span class="style-envato-category">PSD Templates</span></div><div class="style-envato-price"><sup>$</sup>Free</div></div>'
+            var html = '<div id="env-preview-div" class="env-preview-block env-theme-envato  env-preview-shadow" style=""><img class="env-preview-image" src="https://www.divdojo.com/wp-content/uploads/2019/10/3357768-590x300.jpg" alt="Pawsitive - Photography WordPress Theme" width="500px" height="auto" style="display:none;"><div class="env-preview-preloader"></div><h3>Pawsitive - Photography WordPress Theme</h3><div class="style-envato-info"><span class="style-envato-author">by admin</span><span class="style-envato-category">PSD Templates</span></div><div class="style-envato-price"><sup>$</sup>Free</div></div>'
             $('body').append(html);
 
             var $prev = $('#env-preview-div');
