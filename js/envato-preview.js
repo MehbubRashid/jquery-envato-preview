@@ -19,7 +19,7 @@
             }
             var itemAuthor = $(this).attr('data-item-author') ? $(this).attr('data-item-author') : '';
             var itemCat = $(this).attr('data-item-category') ? $(this).attr('data-item-category') : '';
-            var itemCurrency = $(this).attr('data-item-currency') ? $(this).attr('data-item-currency') : '';
+            var itemCurrency = $(this).attr('data-item-currency') ? $(this).attr('data-item-currency') : '$';
             var itemCost = $(this).attr('data-item-cost') ? $(this).attr('data-item-cost') : '';
 
             var html = '<div id="env-preview-div" class="env-preview-block env-theme-envato  env-preview-shadow" style=""><img class="env-preview-image" src="'+prevUrl+'" alt="'+itemName+'" width="500px" height="auto" style="display:none;"><div class="env-preview-preloader"></div><h3>'+itemName+'</h3><div class="style-envato-info"><span class="style-envato-author">by '+itemAuthor+'</span><span class="style-envato-category">'+itemCat+'</span></div><div class="style-envato-price"><sup>'+itemCurrency+'</sup>'+itemCost+'</div></div>'
