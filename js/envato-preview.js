@@ -12,8 +12,14 @@
     $.fn.envatoPreview = function() {
 
         $(this).on('mouseover', function(e){
-            
-            var html = '<div id="env-preview-div" class="env-preview-block env-theme-envato  env-preview-shadow" style=""><img class="env-preview-image" src="https://www.divdojo.com/wp-content/uploads/2019/10/3357768-590x300.jpg" alt="Pawsitive - Photography WordPress Theme" width="500px" height="auto" style="display:none;"><div class="env-preview-preloader"></div><h3>Pawsitive - Photography WordPress Theme</h3><div class="style-envato-info"><span class="style-envato-author">by admin</span><span class="style-envato-category">PSD Templates</span></div><div class="style-envato-price"><sup>$</sup>Free</div></div>'
+            var prevUrl = $(this).attr('data-preview-url') ? $(this).attr('data-preview-url') : '';
+            var itemName = $(this).attr('data-item-name') ? $(this).attr('data-item-name') : '';
+            var itemAuthor = $(this).attr('data-item-author') ? $(this).attr('data-item-author') : '';
+            var itemCat = $(this).attr('data-item-category') ? $(this).attr('data-item-category') : '';
+            var itemCurrency = $(this).attr('data-item-currency') ? $(this).attr('data-item-currency') : '';
+            var itemCost = $(this).attr('data-item-cost') ? $(this).attr('data-item-cost') : '';
+
+            var html = '<div id="env-preview-div" class="env-preview-block env-theme-envato  env-preview-shadow" style=""><img class="env-preview-image" src="'+prevUrl+'" alt="'+itemName+'" width="500px" height="auto" style="display:none;"><div class="env-preview-preloader"></div><h3>'+itemName+'</h3><div class="style-envato-info"><span class="style-envato-author">by '+itemAuthor+'</span><span class="style-envato-category">'+itemCat+'</span></div><div class="style-envato-price"><sup>'+itemCurrency+'</sup>'+itemCost+'</div></div>'
             $('body').append(html);
 
             var $prev = $('#env-preview-div');
