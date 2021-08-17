@@ -14,6 +14,9 @@
         $(this).on('mouseover', function(e){
             var prevUrl = $(this).attr('data-preview-url') ? $(this).attr('data-preview-url') : '';
             var itemName = $(this).attr('data-item-name') ? $(this).attr('data-item-name') : '';
+            if ( !itemName ) {
+                itemName = $(this).attr('alt') ? $(this).attr('alt') : '';
+            }
             var itemAuthor = $(this).attr('data-item-author') ? $(this).attr('data-item-author') : '';
             var itemCat = $(this).attr('data-item-category') ? $(this).attr('data-item-category') : '';
             var itemCurrency = $(this).attr('data-item-currency') ? $(this).attr('data-item-currency') : '';
